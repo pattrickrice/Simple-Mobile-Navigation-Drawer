@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <head>
   <title>Test</title>
-    <!====LOAD JQUERY=====>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!====LOAD CUSTOM STYLESHEET=====>
+  <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="home.css" />
 </head>
 <html>
 <body>
-  <div class="overlay">  </div>
-  <!==== hamburger menu icon=====>
+  <div id ="overlay" class="overlay under">  </div>
   <div id="menu-bar" class="bar">
     <div class="container bar-item" onclick="myFunction(this)">
       <div class="bar1" id=""></div>
@@ -20,7 +18,7 @@
       <p id="name" class="center large">Don't Look Down Records</p>
     </div>
   </div>
-  <div id="menu-drawer" class="drawer ">
+  <div id="menu-drawer" class="drawer close">
     <div class="space">
       <ul id="menu-list" class="medium center">
         <li>Home</li>
