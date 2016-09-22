@@ -23,10 +23,10 @@ html body {
 
 }
 .small {
-  font-size: 12px; /* 75% of the baseline */
+  font-size: 75%; /* 75% of the baseline */
 }
 .medium {
-  font-size: 18px; /* 100% of the baseline */
+  font-size: 100%; /* 100% of the baseline */
 }
 .large {
   font-size: 125%; /* 125% of the baseline */
