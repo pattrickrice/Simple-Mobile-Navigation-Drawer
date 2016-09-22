@@ -13,13 +13,14 @@ html body {
   width: 100%;
 }
 /* Center div or text*/
-.center {
-  height: 100%;
+.center{
+  margin-left: auto;
   vertical-align: middle;
   text-align: center;
 }
 .left {
-  position: relative;
+  float: left;
+
 }
 .small {
   font-size: 12px; /* 75% of the baseline */
@@ -28,14 +29,18 @@ html body {
   font-size: 18px; /* 100% of the baseline */
 }
 .large {
-  font-size: 20px; /* 125% of the baseline */
+  font-size: 125%; /* 125% of the baseline */
 }
 /* Hamburger icon div*/
 .container {
-  position: fixed;
+  position: relative;
   z-index: 1;
   padding: .5em;
   padding-left: .8em;
+  width:  1%;
+}
+.title{
+  width: 90%;
 }
 /*Nav bar at the top*/
 .bar {
@@ -48,7 +53,10 @@ html body {
 }
 /* applies to items in Nav Bar*/
 .bar-item {
-  height: auto%;
+  position: relative;
+  vertical-align: middle;
+  display: inline-table;
+  height: auto;
   text-align: center;
 }
 
@@ -78,7 +86,7 @@ html body {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 .space {
-  padding-top: 4.5em;
+  height: 2em;
 }
 /* Style Mobile Nav drawer*/
 .drawer {
@@ -100,6 +108,7 @@ html body {
 
 }
 .drawer ul li{
+  height: 3em;
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -108,7 +117,7 @@ html body {
 }
 .drawer ul li:hover{
   -webkit-transition-timing-function: ease;
-    transition: 0.5s;
+  transition: 0.5s;
   background-color:  #333333;
   -webkit-box-shadow: inset 10px 10px 35px -17px rgba(26,26,26,1);
   -moz-box-shadow: inset 10px 10px 35px -17px rgba(26,26,26,1);
